@@ -8,7 +8,7 @@
 //   NTFY_URL         notification push sur le téléphone via ntfy (https://ntfy.sh),
 //                    ex. https://ntfy.sh/un-nom-de-sujet-long-et-secret
 //
-// Il suffit qu'un des canaux soit configuré ; le message est accepté dès qu'un canal réussit.
+// Il suffit qu'un des canauxsoit configuré ; le message est accepté dès qu'un canal réussit.
 import { json } from '@sveltejs/kit';
 import { env } from '$env/dynamic/private';
 import { contact } from '$lib/portfolio/data.js';
