@@ -1,0 +1,16 @@
+/* Reset minimal : la page porte son propre style (src/routes/+page.svelte) */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+html,
+body {
+	margin: 0;
+	background: #121213;
+	color: #f1ede4;
+}
+img,
+video {
+	max-width: 100%;
+}

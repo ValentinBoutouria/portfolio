@@ -1,0 +1,14 @@
+node_modules
+
+# Build
+.svelte-kit
+.wrangler
+/build
+
+# OS
+.DS_Store
+
+# Env
+.env
+.env.*
+!.env.example
