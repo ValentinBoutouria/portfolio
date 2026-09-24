@@ -496,12 +496,6 @@
 
 	<footer>
 		<span>© {new Date().getFullYear()} {fullName}</span>
-		<p class="lh">
-			<span class="lh-label">{t.ui.lighthouse.label}</span>
-			{#each t.ui.lighthouse.scores as [name, score]}
-				<span class="lh-score"><b>{score}</b> {name}</span>
-			{/each}
-		</p>
 		<a href="#accueil">{t.ui.backToTop}</a>
 	</footer>
 </div>
@@ -1523,30 +1517,6 @@
 		flex-wrap: wrap;
 		gap: 1rem 2rem;
 		align-items: center;
-	}
-	.lh {
-		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
-		gap: 0.5rem 1rem;
-		margin: 0;
-	}
-	.lh-label {
-		letter-spacing: 0.12em;
-		text-transform: uppercase;
-		font-size: 0.7rem;
-	}
-	.lh-score b {
-		display: inline-grid;
-		place-items: center;
-		width: 2.1rem;
-		height: 2.1rem;
-		margin-right: 0.3rem;
-		border: 1.5px solid var(--gold);
-		border-radius: 50%;
-		color: var(--gold);
-		font-weight: 600;
-		font-size: 0.75rem;
 	}
 	footer a:hover {
 		color: var(--gold);

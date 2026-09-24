@@ -104,7 +104,7 @@ const fr = {
 		projectsTitle: 'Projets',
 		videoSoon: 'Vidéo à venir',
 		context: 'Contexte',
-		work: 'Ce que j’ai fait',
+		work: 'Tâches réalisées',
 		result: 'Résultat',
 		dataModel: 'Modèle de données',
 		enlarge: 'Agrandir',
@@ -137,16 +137,6 @@ const fr = {
 			turnsPerSecond: 'tours/s'
 		},
 		backToTop: 'Haut de page ↑',
-		// Scores mesurés avec Lighthouse sur le build de production : à remesurer après déploiement
-		lighthouse: {
-			label: 'Lighthouse · desktop',
-			scores: [
-				['Performance', 99],
-				['Accessibilité', 100],
-				['Bonnes pratiques', 100],
-				['SEO', 100]
-			]
-		},
 		scrollLabel: 'Défiler vers les projets'
 	},
 	profile: {
@@ -159,7 +149,7 @@ const fr = {
 		availabilityPlaces: 'Paris · Montpellier · Valence'
 	},
 	stats: [
-		{ value: '~50', label: 'projets livrés en production en studio créatif' },
+		{ value: '+50', label: 'projets livrés en production en studio créatif' },
 		{ value: '10', label: 'marques internationales, d’Apple au Musée du Louvre' },
 		{ value: '2 ans', label: 'en studio, avec des équipes en Europe et aux États-Unis' },
 		{ value: 'FR / EN', label: 'bilingue, anglais courant (TOEIC 945)' }
@@ -308,7 +298,7 @@ const en = {
 		projectsTitle: 'Work',
 		videoSoon: 'Video coming soon',
 		context: 'Context',
-		work: 'What I did',
+		work: 'Key tasks',
 		result: 'Outcome',
 		dataModel: 'Data model',
 		enlarge: 'Enlarge',
@@ -341,15 +331,6 @@ const en = {
 			turnsPerSecond: 'turns/s'
 		},
 		backToTop: 'Back to top ↑',
-		lighthouse: {
-			label: 'Lighthouse · desktop',
-			scores: [
-				['Performance', 99],
-				['Accessibility', 100],
-				['Best practices', 100],
-				['SEO', 100]
-			]
-		},
 		scrollLabel: 'Scroll to projects'
 	},
 	profile: {
@@ -362,7 +343,7 @@ const en = {
 		availabilityPlaces: 'Paris · Montpellier · Valence'
 	},
 	stats: [
-		{ value: '~50', label: 'projects shipped to production at a creative studio' },
+		{ value: '50+', label: 'projects shipped to production at a creative studio' },
 		{ value: '10', label: 'international brands, from Apple to the Louvre' },
 		{ value: '2 yrs', label: 'at a studio, with teams in Europe and the US' },
 		{ value: 'FR / EN', label: 'bilingual, fluent English (TOEIC 945)' }
