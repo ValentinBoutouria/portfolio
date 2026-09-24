@@ -243,7 +243,7 @@ const fr = {
 	journey: {
 		intro:
 			'Ingénieur ISIMA, je développe depuis 2024 des interfaces web et mobiles en studio créatif, pour des marques où le rendu visuel compte autant que la technique.',
-		body: 'Mon quotidien : partir d’une maquette, la rendre fidèle sur tous les écrans, puis la faire tourner vite, même sur un vieux téléphone. Je travaille main dans la main avec les designers et les développeurs back-end, et je connais aussi le côté serveur, ce qui rend l’intégration plus fluide. Ma formation en 3D temps réel est un vrai bonus pour les interfaces animées et interactives.',
+		body: 'Mon quotidien : prendre en charge un besoin de bout en bout. Je conçois la base de données et l’API, je développe l’interface, puis je livre en production, du dashboard qui suit la fréquentation de nos miroirs AR au jeu concours Honda déployé sur Cloudflare. Je travaille avec les designers, les chefs de projet et les clients, en Europe comme aux États-Unis, avec la même exigence sur la qualité du code que sur le rendu. Et quand un projet le demande, ma formation en 3D temps réel prend le relais : scènes Three.js, Lenses en réalité augmentée pour Louis Vuitton.',
 		timeline: [
 			{
 				period: 'Sept. 2024 — Aujourd’hui',
@@ -445,7 +445,7 @@ const en = {
 	journey: {
 		intro:
 			'An ISIMA-trained engineer, I have been building web and mobile interfaces at a creative studio since 2024, for brands where visual quality matters as much as the tech.',
-		body: 'My day to day: start from a design, make it faithful on every screen, then make it fast, even on an old phone. I work hand in hand with designers and back-end developers, and I know the server side too, which makes integration smoother. My background in real-time 3D is a real bonus for animated, interactive interfaces.',
+		body: 'My day to day: owning a need from end to end. I design the database and the API, build the interface, then ship to production, from the dashboard tracking attendance at our AR mirrors to the Honda contest deployed on Cloudflare. I work with designers, project managers and clients, in Europe and the US, holding the code to the same standard as the visuals. And when a project calls for it, my background in real-time 3D takes over: Three.js scenes, augmented reality Lenses for Louis Vuitton.',
 		timeline: [
 			{
 				period: 'Sept. 2024 — Today',
