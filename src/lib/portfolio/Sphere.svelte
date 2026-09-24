@@ -45,7 +45,6 @@
 			// Import déstructuré : seules ces classes finissent dans le bundle
 			const {
 				BufferAttribute,
-				Clock,
 				DoubleSide,
 				Group,
 				IcosahedronGeometry,
@@ -63,7 +62,6 @@
 			} = await import('three');
 			const three = {
 				BufferAttribute,
-				Clock,
 				DoubleSide,
 				Group,
 				IcosahedronGeometry,
@@ -380,11 +378,14 @@
 			}
 		};
 
-		const clock = new THREE.Clock();
+		// Chronomètre natif (THREE.Clock est obsolète depuis Three.js r168)
+		let lastFrame = performance.now();
 		let frame;
 		const tick = () => {
 			frame = requestAnimationFrame(tick);
-			const dt = Math.min(clock.getDelta(), 1 / 20);
+			const now = performance.now();
+			const dt = Math.min((now - lastFrame) / 1000, 1 / 20);
+			lastFrame = now;
 			if (!visible) return;
 			const ease = (rate) => 1 - Math.exp(-rate * dt);
 
