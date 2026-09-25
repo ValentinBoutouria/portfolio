@@ -153,7 +153,7 @@ const fr = {
 			'Je transforme des maquettes en interfaces web fluides, responsives et rapides, avec le souci du détail visuel. Et quand elle sert l’expérience, j’y ajoute de la 3D.',
 		location: 'Paris',
 		availability: 'Disponible en CDI dès mars 2027',
-		availabilityPlaces: 'Paris · Lyon · Montpellier · Valence'
+		availabilityPlaces: 'Valence · Montpellier · Lyon · Paris'
 	},
 	stats: [
 		{ value: '+50', label: 'projets livrés en production en studio créatif' },
@@ -347,7 +347,7 @@ const en = {
 			'I turn designs into smooth, responsive, fast web interfaces, with an eye for visual detail. And when it serves the experience, I add some 3D.',
 		location: 'Paris',
 		availability: 'Open to a permanent role from March 2027',
-		availabilityPlaces: 'Paris · Lyon · Montpellier · Valence'
+		availabilityPlaces: 'Valence · Montpellier · Lyon · Paris'
 	},
 	stats: [
 		{ value: '50+', label: 'projects shipped to production at a creative studio' },
