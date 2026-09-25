@@ -91,7 +91,14 @@ const projectBase = {
 	}
 };
 
-const withBase = (projects) => projects.map((p) => ({ ...projectBase[p.id], ...p }));
+// Projets pas encore publiés par le client : leur contenu reste ici, mais ils ne
+// sont pas affichés. Retirer l'id de la liste pour les remettre en ligne.
+const hiddenProjects = ['honda'];
+
+const withBase = (projects) =>
+	projects
+		.filter((p) => !hiddenProjects.includes(p.id))
+		.map((p) => ({ ...projectBase[p.id], ...p }));
 
 const fr = {
 	meta: { locale: 'fr_FR' },
@@ -146,7 +153,7 @@ const fr = {
 			'Je transforme des maquettes en interfaces web fluides, responsives et rapides, avec le souci du détail visuel. Et quand elle sert l’expérience, j’y ajoute de la 3D.',
 		location: 'Paris',
 		availability: 'Disponible en CDI dès mars 2027',
-		availabilityPlaces: 'Paris · Montpellier · Valence'
+		availabilityPlaces: 'Paris · Lyon · Montpellier · Valence'
 	},
 	stats: [
 		{ value: '+50', label: 'projets livrés en production en studio créatif' },
@@ -233,7 +240,7 @@ const fr = {
 	journey: {
 		intro:
 			'Ingénieur ISIMA, je développe depuis 2024 des interfaces web et mobiles en studio créatif, pour des marques où le rendu visuel compte autant que la technique.',
-		body: 'Mon quotidien : prendre en charge un besoin de bout en bout. Je conçois la base de données et l’API, je développe l’interface, puis je livre en production, du dashboard qui suit la fréquentation de nos miroirs AR au jeu concours Honda déployé sur Cloudflare. Je travaille avec les designers, les chefs de projet et les clients, en Europe comme aux États-Unis, avec la même exigence sur la qualité du code que sur le rendu. Et quand un projet le demande, ma formation en 3D temps réel prend le relais : scènes Three.js, Lenses en réalité augmentée pour Louis Vuitton.',
+		body: 'Mon quotidien : prendre en charge un besoin de bout en bout. Je conçois la base de données et l’API, je développe l’interface, puis je livre en production, comme le dashboard qui suit la fréquentation de nos miroirs AR. Je travaille avec les designers, les chefs de projet et les clients, en Europe comme aux États-Unis, avec la même exigence sur la qualité du code que sur le rendu. Et quand un projet le demande, ma formation en 3D temps réel prend le relais : scènes Three.js, Lenses en réalité augmentée pour Louis Vuitton.',
 		timeline: [
 			{
 				period: 'Sept. 2024 — Aujourd’hui',
@@ -340,7 +347,7 @@ const en = {
 			'I turn designs into smooth, responsive, fast web interfaces, with an eye for visual detail. And when it serves the experience, I add some 3D.',
 		location: 'Paris',
 		availability: 'Open to a permanent role from March 2027',
-		availabilityPlaces: 'Paris · Montpellier · Valence'
+		availabilityPlaces: 'Paris · Lyon · Montpellier · Valence'
 	},
 	stats: [
 		{ value: '50+', label: 'projects shipped to production at a creative studio' },
@@ -426,7 +433,7 @@ const en = {
 	journey: {
 		intro:
 			'An ISIMA-trained engineer, I have been building web and mobile interfaces at a creative studio since 2024, for brands where visual quality matters as much as the tech.',
-		body: 'My day to day: owning a need from end to end. I design the database and the API, build the interface, then ship to production, from the dashboard tracking attendance at our AR mirrors to the Honda contest deployed on Cloudflare. I work with designers, project managers and clients, in Europe and the US, holding the code to the same standard as the visuals. And when a project calls for it, my background in real-time 3D takes over: Three.js scenes, augmented reality Lenses for Louis Vuitton.',
+		body: 'My day to day: owning a need from end to end. I design the database and the API, build the interface, then ship to production, like the dashboard tracking attendance at our AR mirrors. I work with designers, project managers and clients, in Europe and the US, holding the code to the same standard as the visuals. And when a project calls for it, my background in real-time 3D takes over: Three.js scenes, augmented reality Lenses for Louis Vuitton.',
 		timeline: [
 			{
 				period: 'Sept. 2024 — Today',
